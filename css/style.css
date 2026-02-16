@@ -1,0 +1,11 @@
+@import './utility/reset.css';
+@import './utility/variables.css';
+@import './layouts/header.css';
+@import './layouts/main.css';
+@import './layouts/footer.css';
+@import './components/catalog.css';
+@import './components/nav.css';
+@import './components/authorization.css';
+@import './utility/media.css';
+@import './components/burger.css';
+@import './components/mobileMenu.css';

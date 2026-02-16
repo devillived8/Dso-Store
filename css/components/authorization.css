@@ -1,0 +1,46 @@
+.authorization {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-family: var(--font-secondary);
+  color: var(--text-primary);
+  font-size: var(--text-xl);
+  height: 100%;
+  
+}
+
+.authorization__btn{
+    border: 1px solid var(--border-light);
+    height: 80%;
+    border-radius: 10px;
+    padding: 5px;
+    position: relative;
+}
+
+.authorization__btn:hover{
+    transition: all .3s ease;
+    /* background-color: var(--text-price); */
+    border: 1px solid var(--border-dark);
+}
+
+
+.authorization__btn:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -25px;
+  width: 2px;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 70px;
+  background-color: var( --border-light);
+  opacity: 0.5;
+}
+
+.authorization__login {
+    
+}
+
+.authorization__registration {
+   
+}

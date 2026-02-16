@@ -1,0 +1,10 @@
+.footer{
+    height: 100px;
+    background-color: var(--footer-bg);
+    flex-shrink: 0;
+    border: 1px solid var(--border-light);
+}
+
+.footer__container{
+    max-width: var(--max-width);
+}

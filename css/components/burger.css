@@ -1,0 +1,28 @@
+.burger {
+  display: none;
+  width: 40px;
+  flex-direction: column;
+  gap: 8px;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger__line {
+  width: 100%; /* теперь 100% от 40px = 40px */
+  height: 3px;
+  background-color: var(--burger-lines);
+  transition: all 0.3s ease;
+}
+
+.burger__active-first {
+  transform: translateY(11px) rotate(45deg);
+}
+
+.burger__active-twice {
+  transform: translateY(-11px) rotate(-45deg);
+}
+
+.burger__active-middle {
+  opacity: 0;
+}

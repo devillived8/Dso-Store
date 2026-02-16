@@ -1,0 +1,23 @@
+html, body{
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    padding: var(--space-12);
+    background-color: var(--bg-primary);
+    flex: 1 0 auto;
+    
+}
+
+.main__container {
+    max-width: var(--max-width);
+    width: 100%;
+    margin: 0 auto;
+
+}
+
