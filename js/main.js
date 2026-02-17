@@ -1,5 +1,7 @@
 import { renderCatalog, renderAccount } from './card.js';
 import { burgerOpen } from './burger.js';
+import {showModal, closeModal} from './modalLogin.js';
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -8,5 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderCatalog(container);
     renderAccount();
     burgerOpen();
+    showModal();
+    closeModal();
   }
 });

@@ -23,10 +23,9 @@
   </head>
 
   <body>
- <header class="header">
+    <header class="header">
       <div class="header__container">
         <div class="header__left">
-          
           <ul class="nav">
             <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
             <li class="nav__item">
@@ -44,7 +43,7 @@
           </a>
         </div>
         <div class="header__right">
-          <div class="authorization ">
+          <div class="authorization">
             <button class="authorization__btn authorization__login">
               Войти
             </button>
@@ -59,16 +58,102 @@
             <span class="burger__line"></span>
           </button>
           <!-- Модалка для телефонов -->
-           <div class="mobile-menu">
+          <div class="mobile-menu">
             <nav class="mobile-nav">
               <ul class="mobile-nav__list">
-                <li class="mobile-nav__element"><a class="mobile-nav__link" href="">Войти</a></li>
-                <li class="mobile-nav__element"><a class="mobile-nav__link" href="">Зарегистрироваться</a></li>
-                <li class="mobile-nav__element"><a class="mobile-nav__link" href="">О нас</a></li>
-                <li class="mobile-nav__element"><a class="mobile-nav__link" href="">Гарантии</a></li>
+                <li class="mobile-nav__element">
+                  <button class="mobile-nav__link mobile-nav-login" href="">
+                    Войти
+                  </button>
+                </li>
+                <li class="mobile-nav__element">
+                  <button
+                    class="mobile-nav__link mobile-nav-registration"
+                    href=""
+                  >
+                    Зарегистрироваться
+                  </button>
+                </li>
+                <li class="mobile-nav__element">
+                  <button class="mobile-nav__link" href="">О нас</button>
+                </li>
+                <li class="mobile-nav__element">
+                  <button class="mobile-nav__link" href="">Гарантии</button>
+                </li>
               </ul>
             </nav>
-           </div>
+          </div>
+        </div>
+      </div>
+      <!-- Модалка для формы входа/регистрации -->
+      <div class="modal-overlay">
+        <!-- Модалка Регистрации -->
+        <div class="modal modal-registration">
+          <form action="" class="modal__form">
+            <h2 class="modal__title">Регистрация</h2>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="modal__input modal__input-login"
+              placeholder="Логин"
+            />
+            <input
+              type="password"
+              name=""
+              id=""
+              class="modal__input modal__input-password"
+              placeholder="Пароль"
+            />
+            <input
+              type="email"
+              name=""
+              id=""
+              class="modal__input modal__input-email"
+              placeholder="Почта"
+            />
+            <input
+              type="button"
+              value="есть аккаунт? Войти"
+              class="modal__login"
+            />
+            <input
+              type="submit"
+              value="Регистрация"
+              class="modal__input modal__input-submit modal__input-registration"
+            />
+          </form>
+        </div>
+
+        <!-- Модалка входа -->
+        <div class="modal modal-login">
+          <form action="" class="modal__form">
+            <h2 class="modal__title">Вход</h2>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="modal__input modal__input-login"
+              placeholder="Логин"
+            />
+            <input
+              type="password"
+              name=""
+              id=""
+              class="modal__input modal__input-password"
+              placeholder="Пароль"
+            />
+            <input
+              type="button"
+              value="Нет аккаунта? Зарегистрироваться"
+              class="modal__registration"
+            />
+            <input
+              type="submit"
+              value="Войти"
+              class="modal__input modal__input-submit"
+            />
+          </form>
         </div>
       </div>
     </header>

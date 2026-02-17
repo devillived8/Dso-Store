@@ -1,8 +1,8 @@
-import { burgerOpen } from './burger.js';
+import { burgerOpen } from "./burger.js";
+import { showModal, closeModal } from "./modalLogin.js";
 
-let mainContainer = document.querySelector('.main__container');
-let info = JSON.parse(sessionStorage.getItem('account'));
-
+let mainContainer = document.querySelector(".main__container");
+let info = JSON.parse(sessionStorage.getItem("account"));
 
 console.log(info.img);
 
@@ -20,11 +20,11 @@ function createAccountInfo(info) {
 }
 
 function renderAccount() {
-  
-    mainContainer.insertAdjacentHTML('beforeend', createAccountInfo(info));
-
+  mainContainer.insertAdjacentHTML("beforeend", createAccountInfo(info));
 }
 
 renderAccount();
 burgerOpen();
+showModal();
+closeModal();
 // sessionStorage.removeItem('account');
