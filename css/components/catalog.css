@@ -1,29 +1,49 @@
 .catalog {
-    min-height: 600px;
-    border: 1px solid var(--border-light);
-    border-radius: 10px;
-    background-color: var(--bg-secondary);
+  min-height: 600px;
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  background-color: var(--bg-secondary);
 }
 
 .catalog__header {
-    font-family: var(--font-primary);
-    font-size: var(--h1);
-    color: var(--text-primary);
-    height: 80px;
-    border-bottom: 1px solid var(--border-light);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  height: 80px;
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* добавляем gap для расстояния между линиями и текстом */
+  padding: 0 20px;
 }
+
+.catalog__title {
+  font-family: var(--font-primary);
+  font-size: var(--h1);
+  color: var(--text-primary);
+  margin: 0;
+  white-space: nowrap;
+  
+  /* Градиент для текста (который у вас был в header) */
+  background-image: linear-gradient(to right, #ffffff, var(--text-gr-primary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Добавляем линии */
+.catalog__header::before,
+.catalog__header::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffffff, var(--text-gr-primary), transparent);
+}
+
 
 .catalog__main {
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 10px;
-    justify-items: center;
-    align-items: center;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
 }
-
-

@@ -29,7 +29,7 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
   .catalog__main {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }

@@ -1,48 +1,105 @@
 /* CARD */
 
 .card {
-    font-family: var(--font-secondary);
-    color: var(--text-secondary);
-    font-size: var(--text-base);
-    width: 100%;
-    max-width: 300px;
-    min-height: 320px;
-    border: 1px solid var(--border-light);
-    transition: border .2s ease;
+  font-family: var(--font-secondary);
+  color: var(--text-secondary);
+  font-size: var(--text-base);
+  width: 100%;
+  max-width: 300px;
+  min-height: 320px;
+  border: 1px solid var(--border-light);
+  transition: border 0.2s ease;
+  border-radius: 10px;
 }
 
-.card:hover{
-    border: 1px solid var(--border-dark);
-    
+.card--mage:hover {
+  box-shadow: 0 0 20px rgba(64, 128, 255, 0.7),
+              0 0 40px rgba(64, 128, 255, 0.4),
+              0 0 60px rgba(64, 128, 255, 0.2);
 }
 
-.card__img{
-    width: 100%;
-    aspect-ratio: 4/3;
-    object-fit: cover;
-    cursor: pointer;
+
+.card--ranger:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.7),
+              0 0 40px rgba(32, 202, 9, 0.4),
+              0 0 60px rgba(16, 160, 11, 0.2);
 }
 
-.card__title{
-    padding-top: var(--space-2);
-    font-family: var(--font-primary);
-    color: var(--text-primary);
-    font-size: var(--text-base);
-    padding-left: var(--space-2);
+
+.card--warrior:hover {
+  box-shadow: 0 0 20px rgba(255, 166, 0, 0.7),
+              0 0 40px rgba(202, 174, 13, 0.4),
+              0 0 60px rgba(184, 157, 4, 0.2);
 }
 
-.card__text{
-    padding-top: var(--space-2);
-    font-family: var(--font-secondary);
-    color: var(--text-secondary);
-    font-size: var(--text-base);
-    padding-left: var(--space-2);
-    word-wrap: break-word;           /* перенос длинных слов */
-    overflow-wrap: break-word;
+
+.card--dwarf:hover {
+  box-shadow: 0 0 20px rgba(249, 249, 250, 0.7),
+              0 0 40px rgba(126, 131, 139, 0.4),
+              0 0 60px rgba(193, 203, 223, 0.2);
 }
 
-.card__price{
-    color: var(--text-price);
-    text-decoration: underline;
-    padding-bottom: 10px;
+.card__img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.card__title {
+  padding-top: var(--space-2);
+  font-family: var(--font-primary);
+  color: var(--text-primary);
+  font-size: var(--text-base);
+  padding-left: var(--space-2);
+  
+}
+
+.card__text {
+  /* padding-top: var(--space-2); */
+  margin-top: var(--space-2);
+  font-family: var(--font-secondary);
+  color: var(--text-secondary);
+  font-size: var(--text-base);
+  padding-left: var(--space-2);
+  word-wrap: break-word; /* перенос длинных слов */
+  overflow-wrap: break-word;
+}
+
+.card__price {
+  color: var(--text-price);
+  /* padding-bottom: 10px; */
+}
+
+.card__price-wrapper {
+  display: flex;
+  padding-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--border-light);
+  margin-top: 10px;
+  height: 100%;
+  gap: 10px;
+
+}
+
+.card__btn {
+  height: 40px;
+  font-weight: 700;
+  color: var(--text-price);
+  transition: border .3s ease;
+  border: 1px solid var(--border-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+.card__btn:hover {
+  border: 1px solid var(--border-dark);
 }

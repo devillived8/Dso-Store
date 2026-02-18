@@ -1,33 +1,32 @@
-:root{
+:root {
+  /* Фоны */
+  --bg-primary: #1e1f24; /* был #1A1B1E — теперь светлее */
+  --bg-secondary: #282a30; /* был #25262B */
+  --bg-tertiary: #2f3138; /* был #2C2E33 */
+  --bg-elevated: #35373f; /* был #2F3136 */
 
-   /* Фоны */
-  --bg-primary: #1E1F24;       /* был #1A1B1E — теперь светлее */
-  --bg-secondary: #282A30;      /* был #25262B */
-  --bg-tertiary: #2F3138;       /* был #2C2E33 */
-  --bg-elevated: #35373F;       /* был #2F3136 */
-  
   /* Модальки */
   --bg-modal: #2f3138d2;
 
-
   /* Хедер и футер */
-  --header-bg: #1B1C21;         /* чуть темнее основного для контраста */
-  --footer-bg: #18191E;         /* ещё чуть темнее */
-  
+  --header-bg: #1b1c21; /* чуть темнее основного для контраста */
+  --footer-bg: #18191e; /* ещё чуть темнее */
+
   /* Текст */
-  --text-primary: #FFFFFF;
-  --text-secondary: #C5C7CC;    /* чуть светлее */
-  --text-muted: #9699A3;   
-  --text-price: #F59F00;     /* чуть светлее */
-  
-/* Шрифты для текста */
-  --font-secondary:  "Montserrat", sans-serif;
+  --text-primary: #ffffff;
+  --text-secondary: #c5c7cc;
+  --text-muted: #9699a3;
+  --text-price: #f59f00;
+  --text-gr-primary: #fa6c00;
+
+  /* Шрифты для текста */
+  --font-secondary: "Montserrat", sans-serif;
   --font-primary: "Inter", sans-serif;
 
   /* Границы */
-  --border-light: #3A3C45;      /* светлее */
-  --border-dark:#F59F00;      /* светлее */
-  --burger-lines: #FFFFFF;
+  --border-light: #3a3c45; /* светлее */
+  --border-dark: #f59f00; /* светлее */
+  --burger-lines: #ffffff;
 
   /* Текст */
   --text-xs: 12px;
@@ -38,7 +37,7 @@
   --h1: 38px;
   --h2: 30px;
   --h3: 24px;
-  
+
   /* Отступы */
   --space-2: 8px;
   --space-4: 16px;
@@ -46,14 +45,21 @@
   --space-8: 32px;
   --space-12: 48px;
 
-
-/* Цвета кнопок */
-  --bg-btn:#bd7f0c;
+  /* Цвета кнопок */
+  --bg-btn: #bd7f0c;
   --hover-btn: #ffab10;
   --border-btn: #ffa600;
 
-
   /* Контейнерная ширина */
-
   --max-width: 1200px;
+
+  /* Цвета для свечения карточек */
+  --border-mage: #1639d4; 
+  --border-ranger: #20ce20; 
+  --border-warrior: #d18718;
+  --border-dwarf: #686868;
+
+
+
+
 }
