@@ -1,9 +1,10 @@
 :root {
   /* Фоны */
   --bg-primary: #1e1f24; /* был #1A1B1E — теперь светлее */
-  --bg-secondary: #282a30; /* был #25262B */
+  --bg-secondary: #282a30d0; /* был #25262B */
   --bg-tertiary: #2f3138; /* был #2C2E33 */
   --bg-elevated: #35373f; /* был #2F3136 */
+  --bg-card: #1e1f24c9;
 
   /* Модальки */
   --bg-modal: #2f3138d2;
@@ -18,6 +19,10 @@
   --text-muted: #9699a3;
   --text-price: #f59f00;
   --text-gr-primary: #fa6c00;
+  --text-class-ar: rgba(0, 255, 0, 0.7);
+  --text-class-wr: rgba(255, 166, 0, 0.7);
+  --text-class-dw: rgba(249, 249, 250, 0.7);
+  --text-class-mg: rgba(64, 128, 255, 0.7);
 
   /* Шрифты для текста */
   --font-secondary: "Montserrat", sans-serif;
@@ -54,12 +59,8 @@
   --max-width: 1200px;
 
   /* Цвета для свечения карточек */
-  --border-mage: #1639d4; 
-  --border-ranger: #20ce20; 
+  --border-mage: #1639d4;
+  --border-ranger: #20ce20;
   --border-warrior: #d18718;
   --border-dwarf: #686868;
-
-
-
-
 }

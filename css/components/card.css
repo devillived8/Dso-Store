@@ -10,12 +10,29 @@
   border: 1px solid var(--border-light);
   transition: border 0.2s ease;
   border-radius: 10px;
+  background-color: var(--bg-primary);
 }
 
 .card--mage:hover {
   box-shadow: 0 0 20px rgba(64, 128, 255, 0.7),
               0 0 40px rgba(64, 128, 255, 0.4),
               0 0 60px rgba(64, 128, 255, 0.2);
+}
+
+.card--mage{
+  color: var(--text-class-mg);
+}
+
+.card--ranger{
+  color: var(--text-class-ar);
+}
+
+.card--warrior{
+  color: var(--text-class-wr);
+}
+
+.card--dwarf{
+  color: var(--text-class-dw);
 }
 
 
@@ -55,7 +72,11 @@
   color: var(--text-primary);
   font-size: var(--text-base);
   padding-left: var(--space-2);
-  
+  cursor: default;
+}
+
+.account__class{
+  color: var(--text-primary) !important;
 }
 
 .card__text {
@@ -67,6 +88,7 @@
   padding-left: var(--space-2);
   word-wrap: break-word; /* перенос длинных слов */
   overflow-wrap: break-word;
+  cursor: default;
 }
 
 .card__price {
@@ -98,6 +120,7 @@
   padding: 0;
   padding: 0 10px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .card__btn:hover {

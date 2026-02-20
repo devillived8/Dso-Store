@@ -18,7 +18,7 @@
     />
     <link rel="stylesheet" href="./css/utility/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/components/account.css">
+    <link rel="stylesheet" href="./css/components/account.css" />
     <title>Dso Store</title>
   </head>
 
@@ -27,7 +27,9 @@
       <div class="header__container">
         <div class="header__left">
           <ul class="nav">
-            <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+            <li class="nav__item">
+              <a href="./aboutUs.html" class="nav__link">О нас</a>
+            </li>
             <li class="nav__item">
               <a href="./guarantees.html" class="nav__link">Гарантии</a>
             </li>
@@ -75,10 +77,12 @@
                   </button>
                 </li>
                 <li class="mobile-nav__element">
-                  <a class="mobile-nav__link" href="">О нас</a>
+                  <a class="mobile-nav__link" href="./aboutUs.html">О нас</a>
                 </li>
                 <li class="mobile-nav__element">
-                  <a class="mobile-nav__link" href="./guarantees.html">Гарантии</a>
+                  <a class="mobile-nav__link" href="./guarantees.html"
+                    >Гарантии</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -157,18 +161,25 @@
         </div>
       </div>
     </header>
+    
     <main class="main">
-      <div class="main__container">
-
+      <!-- Модалка для увеличения картинок -->
+      <div class="gallery">
+        <div class="gallery__wrapper">
+          <img src="" class="gallery__img" alt="character img">
+        </div>
+        <div class="gallery__close">
+          
+        </div>
       </div>
+
+
+      <div class="main__container"></div>
     </main>
     <footer class="footer">
-        <div class="footer__container">
-
-        </div>
+      <div class="footer__container"></div>
     </footer>
-
-   
+    
     <script type="module" src="./js/account.js"></script>
   </body>
 </html>

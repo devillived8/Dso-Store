@@ -37,8 +37,59 @@
 
 @media (max-width: 390px) {
   .burger {
-
     margin-right: 10px !important;
+  }
+}
 
+@media (max-width: 640px) {
+  .catalog__header::before,
+  .catalog__header::after {
+    content: none;
+    background: none;
+  }
+}
+
+
+
+/* aboutUs страница */
+
+
+@media (max-width: 768px) {
+  .about-us {
+    min-height: auto; /* Убираем фикс. высоту */
+  }
+  
+  .about-us__main {
+    padding: 10px 30px;
+  }
+  
+  .about-us__group--info {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us__main {
+    padding: 8px 20px;
+  }
+  
+  .about-us__text {
+    text-indent: 8px;
+    padding: 12px 0;
+  }
+  
+  .about-us__group--info {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+  
+  .about-us__img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Убираем двойные границы */
+  .about-us__subtitle {
+    border-bottom: none;
   }
 }

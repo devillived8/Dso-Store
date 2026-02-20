@@ -2,7 +2,7 @@
   min-height: 600px;
   border: 1px solid var(--border-light);
   border-radius: 10px;
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-card);
 }
 
 .catalog__header {
@@ -11,7 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px; /* добавляем gap для расстояния между линиями и текстом */
+  gap: 30px; 
   padding: 0 20px;
 }
 
@@ -22,14 +22,14 @@
   margin: 0;
   white-space: nowrap;
   
-  /* Градиент для текста (который у вас был в header) */
+  
   background-image: linear-gradient(to right, #ffffff, var(--text-gr-primary));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-/* Добавляем линии */
+
 .catalog__header::before,
 .catalog__header::after {
   content: '';

@@ -56,15 +56,33 @@ function formatPrice(price) {
   }
 }
 
+// Цвет классов
+export function paintClass(className) {
+  switch (className) {
+    case "warrior":
+      return "card--warrior";
+    case "mage":
+      return "card--mage";
+    case "ranger":
+      return "card--ranger";
+    case "dwarf":
+      return "card--dwarf";
+    default:
+      return "";
+  }
+}
+
 // Создание карточек
 function createCard(cardData) {
   const formattedPrice = formatPrice(cardData.price);
   const cardClass = `card card--${cardData.class}`;
+  const colorClass = paintClass(cardData.class);
+
   return `
     <div class="${cardClass}">
       <img src="${cardData.image}" class="card__img" alt="${cardData.title}">
       <h2 class="card__title">${cardData.title}</h2>
-      <p class="card__text card__class">Класс: ${cardData.class}</p>
+      <p class="card__text card__class">Класс: <span class="${colorClass}">${cardData.class}</span></p>
       <p class="card__text card__server">Сервер: ${cardData.server}</p>
       <div class="card__price-wrapper">
         <p class="card__text card__price">${formattedPrice}</p>
@@ -74,11 +92,10 @@ function createCard(cardData) {
   `;
 }
 
-
-
 // Вставка карточек на страницу
 export function renderCatalog() {
   cardsData.forEach((card) => {
+    
     catalogMain.insertAdjacentHTML("beforeend", createCard(card));
   });
 }
@@ -91,7 +108,7 @@ export function renderAccount() {
       let infoAccount = e.target.closest(".card");
       if (infoAccount) {
         let title = infoAccount.querySelector(".card__title").textContent;
-        let className = infoAccount.querySelector(".card__class").textContent;
+        let className = infoAccount.querySelector(".card__class>span").textContent;
         let server = infoAccount.querySelector(".card__server").textContent;
         let price = infoAccount.querySelector(".card__price").textContent;
         let img = infoAccount.querySelector(".card__img").src;

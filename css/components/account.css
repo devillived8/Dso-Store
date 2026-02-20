@@ -13,6 +13,7 @@
   /* max-width: 80%;
   max-height: 80%; */
   padding: var(--space-6);
+  cursor: pointer;
 }
 
 .account__title {
@@ -27,6 +28,8 @@
   font-size: var(--text-base);
   padding-top: var(--space-4);
 }
+
+
 
 .account__price {
   color: var(--text-price);
@@ -49,3 +52,5 @@
 .account__btn:hover{
   background-color: var(--hover-btn);
 }
+
+
