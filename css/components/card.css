@@ -19,6 +19,12 @@
               0 0 60px rgba(64, 128, 255, 0.2);
 }
 
+
+.card[class*="card--"]:hover span.card__span {
+  box-shadow: none !important;
+}
+
+
 .card--mage{
   color: var(--text-class-mg);
 }

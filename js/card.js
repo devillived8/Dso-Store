@@ -82,7 +82,7 @@ function createCard(cardData) {
     <div class="${cardClass}">
       <img src="${cardData.image}" class="card__img" alt="${cardData.title}">
       <h2 class="card__title">${cardData.title}</h2>
-      <p class="card__text card__class">Класс: <span class="${colorClass}">${cardData.class}</span></p>
+      <p class="card__text card__class">Класс: <span class="${colorClass} card__span">${cardData.class}</span></p>
       <p class="card__text card__server">Сервер: ${cardData.server}</p>
       <div class="card__price-wrapper">
         <p class="card__text card__price">${formattedPrice}</p>

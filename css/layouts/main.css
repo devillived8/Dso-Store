@@ -11,7 +11,7 @@ body {
     padding: var(--space-12);
     background-color: var(--bg-primary);
     flex: 1 0 auto;
-    background-image: url(/img/mainBg.png);
+    background-image: url('../../img/mainBg.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
