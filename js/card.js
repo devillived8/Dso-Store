@@ -1,41 +1,41 @@
 let catalogMain = document.querySelector(".catalog__main");
 
 // Моковые данные для карточек
-const cardsData = [
+export const cardsData = [
   {
     title: "Маг 80 уровня",
     price: "15000р",
     class: "mage",
     image: "./img/mage1.jpg",
-    server: "grimmage",
+    server: "grimmag",
   },
   {
     title: "Воин 90 уровня",
-    price: "20000р",
+    price: "10000р",
     class: "ranger",
     image: "./img/mage2.jpg",
-    server: "grimmage",
+    server: "grimmag",
   },
   {
     title: "Воин 90 уровня",
-    price: "20000р",
+    price: "5000р",
     class: "dwarf",
     image: "./img/mage2.jpg",
-    server: "grimmage",
+    server: "grimmag",
   },
   {
     title: "Воин 90 уровня",
-    price: "20000р",
+    price: "200р",
     class: "warrior",
     image: "./img/mage2.jpg",
-    server: "grimmage",
+    server: "grimmag",
   },
   {
     title: "Воин 90 уровня",
-    price: "20000р",
+    price: "6000р",
     class: "warrior",
     image: "./img/mage2.jpg",
-    server: "grimmage",
+    server: "grimmag",
   },
 ];
 
@@ -73,7 +73,7 @@ export function paintClass(className) {
 }
 
 // Создание карточек
-function createCard(cardData) {
+export function createCard(cardData) {
   const formattedPrice = formatPrice(cardData.price);
   const cardClass = `card card--${cardData.class}`;
   const colorClass = paintClass(cardData.class);

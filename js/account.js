@@ -15,10 +15,12 @@ function createAccountInfo(info) {
       <img src="${info.img}" class="account__img" alt="${info.title}">
   </div>
       <h2 class="account__title">${info.title}</h2>
-      <p class="account__text account__class">Класс: <span class="${colorClass}">${info.className}</span></p>
+      <p class="account__text account__class">Класс: <span class="${colorClass} card__span">${info.className}</span></p>
       <p class="account__text account__server">${info.server}</p>
+      <div class="account__price-wrapper">
       <p class="account__text account__price">${info.price}</p>
       <a href="https://vk.com/ipixel" target="_blank"><button class="account__btn">Купить</button></a>
+      </div>
     </div>
   `;
 }

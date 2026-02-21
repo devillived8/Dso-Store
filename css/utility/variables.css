@@ -36,12 +36,16 @@
   /* Текст */
   --text-xs: 12px;
   --text-sm: 14px;
-  --text-base: 1rem;
+  --text-base: 16px;
   --text-lg: 18px;
   --text-xl: 20px;
   --h1: 38px;
   --h2: 30px;
   --h3: 24px;
+  --adaptive-lg: 1.4rem;
+  --adaptive-med: 1.2rem;
+  --adaptive-sm: 1rem;
+
 
   /* Отступы */
   --space-2: 8px;

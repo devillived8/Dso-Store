@@ -81,9 +81,7 @@
   cursor: default;
 }
 
-.account__class{
-  color: var(--text-primary) !important;
-}
+
 
 .card__text {
   /* padding-top: var(--space-2); */

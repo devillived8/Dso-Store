@@ -17,40 +17,56 @@
 }
 
 .account__title {
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  justify-content: center;
+  width: 80%;
   font-family: var(--font-primary);
   color: var(--text-primary);
-  font-size: var(--text-base);
+  font-size: var(--adaptive-lg);
+  font-weight: 600;
+  padding-top: var(--space-2);
 }
 
 .account__text {
   font-family: var(--font-secondary);
   color: var(--text-secondary);
-  font-size: var(--text-base);
+  font-size: var(--adaptive-sm);
   padding-top: var(--space-4);
 }
 
-
+.card__span {
+  box-shadow: none !important;
+}
 
 .account__price {
   color: var(--text-price);
-  text-decoration: underline;
-  padding-bottom: var(--space-4);
 }
 
-.account__btn{
-    width: 120px;
-    height: 60px;
-    background-color: var(--bg-btn);
-    border: 1px solid var(--border-btn);
-    font-size: var(--text-lg);
-    color: var(--text-primary);
-    border-radius: 10px;
-    font-family: var(--font-secondary);
-    transition: background-color .3s ease;
+.account__btn {
+  width: 120px;
+  height: 60px;
+  background-color: var(--bg-btn);
+  border: 1px solid var(--border-btn);
+  font-size: var(--text-lg);
+  color: var(--text-primary);
+  border-radius: 10px;
+  font-family: var(--font-secondary);
+  transition: background-color 0.3s ease;
 }
 
-.account__btn:hover{
+.account__btn:hover {
   background-color: var(--hover-btn);
 }
 
+.account__price-wrapper {
+  display: flex;
+  margin: var(--space-4);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
 
+.account__class{
+  
+}

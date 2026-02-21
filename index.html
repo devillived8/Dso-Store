@@ -70,7 +70,9 @@
                   <a class="mobile-nav__link" href="./aboutUs.html">О нас</a>
                 </li>
                 <li class="mobile-nav__element">
-                  <a class="mobile-nav__link" href="./guarantees.html">Гарантии</a>
+                  <a class="mobile-nav__link" href="./guarantees.html"
+                    >Гарантии</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -151,6 +153,49 @@
     </header>
     <main class="main">
       <div class="main__container">
+        <!-- Фильтер -->
+        <div class="filter">
+          <form action="" class="filter__form">
+            <select
+              name=""
+              id=""
+              class="filter__select filter__select--server"
+              value="Сервер"
+            >
+              <option value="any">Все сервера</option>
+              <option value="Grimmag">Grimmag</option>
+              <option value="Heredur">Heredur</option>
+              <option value="Werian">Werian</option>
+              <option value="Harold">Harold</option>
+              <option value="Agathon">Agathon</option>
+              <option value="Tegan">Tegan</option>
+              <option value="Balor-PVP">Balor-PVP</option>
+            </select>
+            <select name="" id="" class="filter__select filter__select--class">
+              <option value="any">Все классы</option>
+              <option value="spellweaver">Маг круга</option>
+              <option value="dragonknight">Воин дракона</option>
+              <option value="steam mechanicus">Паромеханист</option>
+              <option value="ranger">Следопыт</option>
+            </select>
+            <div class="filter__sort">
+              <button type="button" class="filter__sort-max">
+                ↑ Сначала макс цена
+              </button>
+              <button type="button" class="filter__sort-min">
+                ↓ Сначала мин цена
+              </button>
+            </div>
+            <input
+              type="search"
+              name=""
+              id=""
+              class="filter__search"
+              placeholder="Поиск по словам"
+            />
+          </form>
+        </div>
+        <!-- Каталог -->
         <section class="catalog">
           <div class="catalog__header">
             <h1 class="catalog__title">Витрина аккаунтов</h1>
@@ -160,9 +205,7 @@
       </div>
     </main>
     <footer class="footer">
-      <div class="footer__container">
-        
-      </div>
+      <div class="footer__container"></div>
     </footer>
 
     <script type="module" src="./js/main.js"></script>
