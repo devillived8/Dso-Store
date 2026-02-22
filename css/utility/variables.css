@@ -23,6 +23,7 @@
   --text-class-wr: rgba(255, 166, 0, 0.7);
   --text-class-dw: rgba(249, 249, 250, 0.7);
   --text-class-mg: rgba(64, 128, 255, 0.7);
+  --text-error: #ff0000;
 
   /* Шрифты для текста */
   --font-secondary: "Montserrat", sans-serif;

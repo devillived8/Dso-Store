@@ -5,37 +5,37 @@ export const cardsData = [
   {
     title: "Маг 80 уровня",
     price: "15000р",
-    class: "mage",
+    class: "Spellweaver",
     image: "./img/mage1.jpg",
-    server: "grimmag",
+    server: "Grimmag",
   },
   {
     title: "Воин 90 уровня",
     price: "10000р",
-    class: "ranger",
+    class: "Ranger",
     image: "./img/mage2.jpg",
-    server: "grimmag",
+    server: "Werian",
   },
   {
     title: "Воин 90 уровня",
     price: "5000р",
-    class: "dwarf",
+    class: "Steam-mechanicus",
     image: "./img/mage2.jpg",
-    server: "grimmag",
+    server: "Heredur",
   },
   {
     title: "Воин 90 уровня",
     price: "200р",
-    class: "warrior",
+    class: "Dragonknight",
     image: "./img/mage2.jpg",
-    server: "grimmag",
+    server: "Grimmag",
   },
   {
     title: "Воин 90 уровня",
     price: "6000р",
-    class: "warrior",
+    class: "Dragonknight",
     image: "./img/mage2.jpg",
-    server: "grimmag",
+    server: "Grimmag",
   },
 ];
 
@@ -59,13 +59,13 @@ function formatPrice(price) {
 // Цвет классов
 export function paintClass(className) {
   switch (className) {
-    case "warrior":
+    case "Dragonknight":
       return "card--warrior";
-    case "mage":
+    case "Spellweaver":
       return "card--mage";
-    case "ranger":
+    case "Ranger":
       return "card--ranger";
-    case "dwarf":
+    case "Steam-mechanicus":
       return "card--dwarf";
     default:
       return "";
@@ -94,6 +94,7 @@ export function createCard(cardData) {
 
 // Вставка карточек на страницу
 export function renderCatalog() {
+  
   cardsData.forEach((card) => {
     
     catalogMain.insertAdjacentHTML("beforeend", createCard(card));

@@ -13,16 +13,7 @@
   background-color: var(--bg-primary);
 }
 
-.card--mage:hover {
-  box-shadow: 0 0 20px rgba(64, 128, 255, 0.7),
-              0 0 40px rgba(64, 128, 255, 0.4),
-              0 0 60px rgba(64, 128, 255, 0.2);
-}
 
-
-.card[class*="card--"]:hover span.card__span {
-  box-shadow: none !important;
-}
 
 
 .card--mage{
@@ -42,24 +33,37 @@
 }
 
 
-.card--ranger:hover {
+.card--Ranger:hover {
   box-shadow: 0 0 20px rgba(0, 255, 0, 0.7),
               0 0 40px rgba(32, 202, 9, 0.4),
               0 0 60px rgba(16, 160, 11, 0.2);
 }
 
 
-.card--warrior:hover {
+.card--Dragonknight:hover {
   box-shadow: 0 0 20px rgba(255, 166, 0, 0.7),
               0 0 40px rgba(202, 174, 13, 0.4),
               0 0 60px rgba(184, 157, 4, 0.2);
 }
 
 
-.card--dwarf:hover {
+.card--Steam-mechanicus:hover {
   box-shadow: 0 0 20px rgba(249, 249, 250, 0.7),
               0 0 40px rgba(126, 131, 139, 0.4),
               0 0 60px rgba(193, 203, 223, 0.2);
+}
+
+
+
+.card--Spellweaver:hover {
+  box-shadow: 0 0 20px rgba(64, 128, 255, 0.7),
+              0 0 40px rgba(64, 128, 255, 0.4),
+              0 0 60px rgba(64, 128, 255, 0.2);
+}
+
+
+.card[class*="card--"]:hover span.card__span {
+  box-shadow: none !important;
 }
 
 .card__img {
